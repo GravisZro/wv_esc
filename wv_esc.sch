@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -50,42 +50,20 @@ Wire Wire Line
 	9600 1800 9600 1850
 Wire Wire Line
 	9350 1800 9600 1800
-$Comp
-L power:+15V #PWR0102
-U 1 1 6145FF5F
-P 9600 1600
-F 0 "#PWR0102" H 9600 1450 50  0001 C CNN
-F 1 "+15V" H 9615 1773 50  0000 C CNN
-F 2 "" H 9600 1600 50  0001 C CNN
-F 3 "" H 9600 1600 50  0001 C CNN
-	1    9600 1600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9350 1650 9600 1650
 Wire Wire Line
 	9600 1650 9600 1600
 $Comp
-L Connector_Generic:Conn_01x03 Comm
+L Connector_Generic:Conn_01x03 Comm1
 U 1 1 614612D8
 P 4850 3000
-F 0 "Comm" V 4722 3180 50  0000 L CNN
+F 0 "Comm1" V 4722 3180 50  0000 L CNN
 F 1 "Conn_01x03" V 4813 3180 50  0001 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4850 3000 50  0001 C CNN
 F 3 "~" H 4850 3000 50  0001 C CNN
 	1    4850 3000
 	0    -1   1    0   
-$EndComp
-$Comp
-L power:+15V #PWR0112
-U 1 1 614650F4
-P 4850 2550
-F 0 "#PWR0112" H 4850 2400 50  0001 C CNN
-F 1 "+15V" H 4865 2723 50  0000 C CNN
-F 2 "" H 4850 2550 50  0001 C CNN
-F 3 "" H 4850 2550 50  0001 C CNN
-	1    4850 2550
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9350 2150 9750 2150
@@ -104,25 +82,25 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 61466A24
-P 1800 3000
-F 0 "J1" H 1880 2992 50  0000 L CNN
-F 1 "Conn_01x02" H 1880 2901 50  0001 L CNN
-F 2 "Connector_Wire:SolderWire-2sqmm_1x02_P7.8mm_D2mm_OD3.9mm" H 1800 3000 50  0001 C CNN
-F 3 "~" H 1800 3000 50  0001 C CNN
-	1    1800 3000
+P 3350 3100
+F 0 "J1" H 3430 3092 50  0000 L CNN
+F 1 "Conn_01x02" H 3430 3001 50  0001 L CNN
+F 2 "Connector_Wire:SolderWire-2sqmm_1x02_P7.8mm_D2mm_OD3.9mm" H 3350 3100 50  0001 C CNN
+F 3 "~" H 3350 3100 50  0001 C CNN
+	1    3350 3100
 	0    -1   1    0   
 $EndComp
 $Comp
 L power:+BATT #PWR?
 U 1 1 614EF543
-P 2000 1950
+P 3550 2050
 AR Path="/613B2859/614EF543" Ref="#PWR?"  Part="1" 
 AR Path="/614EF543" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 2000 1800 50  0001 C CNN
-F 1 "+BATT" H 2015 2123 50  0000 C CNN
-F 2 "" H 2000 1950 50  0001 C CNN
-F 3 "" H 2000 1950 50  0001 C CNN
-	1    2000 1950
+F 0 "#PWR0115" H 3550 1900 50  0001 C CNN
+F 1 "+BATT" H 3565 2223 50  0000 C CNN
+F 2 "" H 3550 2050 50  0001 C CNN
+F 3 "" H 3550 2050 50  0001 C CNN
+	1    3550 2050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -136,99 +114,6 @@ F 3 "" H 4500 2800 50  0001 C CNN
 	1    4500 2800
 	1    0    0    -1  
 $EndComp
-$Comp
-L ldos:AS78LXX Q7
-U 1 1 616257BD
-P 3100 2050
-F 0 "Q7" H 3100 2365 50  0000 C CNN
-F 1 "AS78LXX" H 3100 2274 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-89-3" H 3100 2050 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AS78Lxx.pdf" H 3100 2050 50  0001 C CNN
-	1    3100 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+15V #PWR0121
-U 1 1 61626064
-P 3750 1950
-F 0 "#PWR0121" H 3750 1800 50  0001 C CNN
-F 1 "+15V" H 3765 2123 50  0000 C CNN
-F 2 "" H 3750 1950 50  0001 C CNN
-F 3 "" H 3750 1950 50  0001 C CNN
-	1    3750 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0122
-U 1 1 6162813D
-P 2500 1950
-F 0 "#PWR0122" H 2500 1800 50  0001 C CNN
-F 1 "+5V" H 2515 2123 50  0000 C CNN
-F 2 "" H 2500 1950 50  0001 C CNN
-F 3 "" H 2500 1950 50  0001 C CNN
-	1    2500 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0123
-U 1 1 61629DD7
-P 3100 2600
-F 0 "#PWR0123" H 3100 2350 50  0001 C CNN
-F 1 "GND" H 3105 2427 50  0000 C CNN
-F 2 "" H 3100 2600 50  0001 C CNN
-F 3 "" H 3100 2600 50  0001 C CNN
-	1    3100 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 2400 3100 2550
-Wire Wire Line
-	3500 2150 3750 2150
-Wire Wire Line
-	3750 2150 3750 1950
-Wire Wire Line
-	2700 2150 2500 2150
-Wire Wire Line
-	2500 2150 2500 1950
-$Comp
-L Device:C_Small C8
-U 1 1 61631E35
-P 3750 2350
-F 0 "C8" H 3842 2396 50  0000 L CNN
-F 1 "0.1μF, 25V" H 3842 2305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3750 2350 50  0001 C CNN
-F 3 "~" H 3750 2350 50  0001 C CNN
-	1    3750 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C7
-U 1 1 61632066
-P 2500 2350
-F 0 "C7" H 2592 2396 50  0000 L CNN
-F 1 "0.33μF, 10V" H 2592 2305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2500 2350 50  0001 C CNN
-F 3 "~" H 2500 2350 50  0001 C CNN
-	1    2500 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 2250 3750 2150
-Connection ~ 3750 2150
-Wire Wire Line
-	2500 2150 2500 2250
-Connection ~ 2500 2150
-Wire Wire Line
-	2500 2450 2500 2550
-Wire Wire Line
-	2500 2550 3100 2550
-Connection ~ 3100 2550
-Wire Wire Line
-	3100 2550 3100 2600
-Wire Wire Line
-	3100 2550 3750 2550
-Wire Wire Line
-	3750 2550 3750 2450
 $Comp
 L Connector_Generic:Conn_01x03 J3
 U 1 1 6146C61B
@@ -332,24 +217,24 @@ Wire Wire Line
 $Comp
 L power:-BATT #PWR0116
 U 1 1 6161A13C
-P 1700 1950
-F 0 "#PWR0116" H 1700 1800 50  0001 C CNN
-F 1 "-BATT" H 1715 2123 50  0000 C CNN
-F 2 "" H 1700 1950 50  0001 C CNN
-F 3 "" H 1700 1950 50  0001 C CNN
-	1    1700 1950
+P 3250 2050
+F 0 "#PWR0116" H 3250 1900 50  0001 C CNN
+F 1 "-BATT" H 3265 2223 50  0000 C CNN
+F 2 "" H 3250 2050 50  0001 C CNN
+F 3 "" H 3250 2050 50  0001 C CNN
+	1    3250 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1750 2100 1700 2100
+	3300 2200 3250 2200
 Wire Wire Line
-	1700 2100 1700 1950
+	3250 2200 3250 2050
 Wire Wire Line
 	4850 2800 4850 2550
 Wire Wire Line
-	2000 1950 2000 2100
+	3550 2050 3550 2200
 Wire Wire Line
-	2000 2100 1950 2100
+	3550 2200 3500 2200
 Wire Wire Line
 	4750 2800 4750 2700
 Wire Wire Line
@@ -357,13 +242,13 @@ Wire Wire Line
 Wire Wire Line
 	4500 2700 4500 2800
 Wire Wire Line
-	1900 2800 2000 2800
+	3450 2900 3550 2900
 Wire Wire Line
-	2000 2800 2000 2500
+	3550 2900 3550 2600
 Wire Wire Line
-	1800 2800 1700 2800
+	3350 2900 3250 2900
 Wire Wire Line
-	1700 2800 1700 2500
+	3250 2900 3250 2600
 Wire Wire Line
 	5300 2250 4950 2250
 Wire Wire Line
@@ -374,10 +259,10 @@ Wire Wire Line
 	4950 2150 4950 2250
 Connection ~ 4950 2250
 $Comp
-L Connector_Generic:Conn_01x03 Debug
+L Connector_Generic:Conn_01x03 Debug1
 U 1 1 6159FDFE
 P 6750 900
-F 0 "Debug" H 6830 942 50  0000 L CNN
+F 0 "Debug1" H 6830 942 50  0000 L CNN
 F 1 "Conn_01x03" H 6830 851 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6750 900 50  0001 C CNN
 F 3 "~" H 6750 900 50  0001 C CNN
@@ -388,17 +273,6 @@ Wire Wire Line
 	6500 1950 6500 1000
 Wire Wire Line
 	6500 1000 6550 1000
-$Comp
-L MCU_Microchip_ATtiny:ATtiny404-SS U1
-U 1 1 612BCCF1
-P 5900 2350
-F 0 "U1" H 5600 3000 50  0000 C CNN
-F 1 "ATtiny404-SS" H 5900 2300 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5900 2350 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/50002687A.pdf" H 5900 2350 50  0001 C CNN
-	1    5900 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7000 3300 7000 3150
 Wire Wire Line
@@ -430,10 +304,10 @@ F 3 "" H 7250 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x05 Sensor
+L Connector_Generic:Conn_01x05 Sensor1
 U 1 1 615EFE46
 P 6900 3500
-F 0 "Sensor" V 6864 3212 50  0000 R CNN
+F 0 "Sensor1" V 6864 3212 50  0000 R CNN
 F 1 "Conn_01x05" V 6773 3212 50  0001 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6900 3500 50  0001 C CNN
 F 3 "~" H 6900 3500 50  0001 C CNN
@@ -509,39 +383,65 @@ Wire Wire Line
 $Comp
 L Device:CP1_Small C?
 U 1 1 61469B9A
-P 1850 2100
+P 3400 2200
 AR Path="/613B2859/61469B9A" Ref="C?"  Part="1" 
 AR Path="/61469B9A" Ref="C5"  Part="1" 
-F 0 "C5" V 1950 2050 50  0000 L CNN
-F 1 "220μF, 100V" V 2050 2050 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D16.0mm_H25.0mm_P7.50mm" H 1850 2100 50  0001 C CNN
-F 3 "~" H 1850 2100 50  0001 C CNN
-	1    1850 2100
+F 0 "C5" V 3500 2150 50  0000 L CNN
+F 1 "220μF, 100V" V 3600 2150 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D16.0mm_H25.0mm_P7.50mm" H 3400 2200 50  0001 C CNN
+F 3 "~" H 3400 2200 50  0001 C CNN
+	1    3400 2200
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:CP1_Small C?
 U 1 1 61644B75
-P 1850 2500
+P 3400 2600
 AR Path="/613B2859/61644B75" Ref="C?"  Part="1" 
 AR Path="/61644B75" Ref="C6"  Part="1" 
-F 0 "C6" V 1950 2450 50  0000 L CNN
-F 1 "220μF, 100V" V 2050 2450 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D16.0mm_H25.0mm_P7.50mm" H 1850 2500 50  0001 C CNN
-F 3 "~" H 1850 2500 50  0001 C CNN
-	1    1850 2500
+F 0 "C6" V 3500 2550 50  0000 L CNN
+F 1 "220μF, 100V" V 3600 2550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D16.0mm_H25.0mm_P7.50mm" H 3400 2600 50  0001 C CNN
+F 3 "~" H 3400 2600 50  0001 C CNN
+	1    3400 2600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1750 2500 1700 2500
+	3300 2600 3250 2600
 Wire Wire Line
-	1950 2500 2000 2500
+	3500 2600 3550 2600
 Wire Wire Line
-	2000 2500 2000 2100
-Connection ~ 2000 2500
-Connection ~ 2000 2100
+	3550 2600 3550 2200
+Connection ~ 3550 2600
+Connection ~ 3550 2200
 Wire Wire Line
-	1700 2500 1700 2100
-Connection ~ 1700 2500
-Connection ~ 1700 2100
+	3250 2600 3250 2200
+Connection ~ 3250 2600
+Connection ~ 3250 2200
+$Comp
+L MCU_Microchip_ATtiny:ATtiny204-SS U1
+U 1 1 6166BB49
+P 5900 2350
+F 0 "U1" H 5500 3050 50  0000 C CNN
+F 1 "ATtiny204-SS" H 5900 2350 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5900 2350 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/50002687A.pdf" H 5900 2350 50  0001 C CNN
+	1    5900 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4850 2550 1    50   UnSpc ~ 0
+14V
+Text GLabel 9600 1600 1    50   UnSpc ~ 0
+14V
+$Sheet
+S 3250 1150 550  200 
+U 615E1170
+F0 "5V regulator" 50
+F1 "5Vregulator.sch" 50
+F2 "Vin" U L 3250 1250 50 
+$EndSheet
+Text GLabel 3050 1250 0    50   UnSpc ~ 0
+14V
+Wire Wire Line
+	3250 1250 3050 1250
 $EndSCHEMATC
