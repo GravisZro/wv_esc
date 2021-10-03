@@ -1,5 +1,6 @@
 # Schematic
 ![](schematic.png)
+[ATtiny204 Datasheet](http://ww1.microchip.com/downloads/en/devicedoc/50002687a.pdf)
 # Sheet: 5V Regulator
 ![](schematic_5v_regulator.png)
 # Sheet: Driver and MOSFETS
